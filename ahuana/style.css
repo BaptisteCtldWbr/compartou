@@ -1,0 +1,76 @@
+@font-face {
+	font-family: 'Raleway';
+	src: url('R/Raleway.ttf') format('truetype')
+}
+
+html{
+    --vert: #006D3E;
+}
+
+body{
+    margin: 10vh 15vw;
+}
+
+h1, h2, h3, p, figcaption{
+    font-family: "Raleway", "Calibri";
+    font-weight: 400;
+    text-align: justify;
+    
+}
+
+h1, h2, h3, p{
+    margin: 15px 0 ;
+}
+
+h1, h2, h3{
+    color: var(--vert);
+}
+
+h1{
+    font-weight: 800;
+    font-size: 2em;
+}
+
+h1 + p{
+    font-style: italic;
+    font-size: 1.1em;
+}
+
+h1 + p a{
+    color: black;
+}
+
+h1 + p a:hover{
+    text-decoration: none;
+}
+
+h2{
+    font-weight: 700;
+    font-size: 1.7em;
+}
+
+h3{
+    font-weight: 500;
+    font-size: 1.3em;
+}
+
+div.image{
+    display: flex;
+}
+
+figure{
+    padding: 20px;
+}
+
+figure figcaption{
+    text-align: center;
+    font-style: italic;
+}
+
+figure img{
+    max-width: 200px;
+}
+
+div.image#equipe{
+    flex-direction: row-reverse;
+}
