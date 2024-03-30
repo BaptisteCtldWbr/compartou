@@ -1,0 +1,40 @@
+@font-face {
+    font-family: Raleway;
+    src: url('raleway.ttf');
+}
+
+@font-face {
+    font-family: krona;
+    src: url('krona.ttf');
+}
+
+body{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-width: 100vh;
+    justify-content: center;
+}
+
+img{
+    width: 50%;
+    margin: 50px;
+    border-radius: 20px;
+}
+
+p{
+    text-align: center;
+    font-family: 'raleway', calibri;
+}
+
+a{
+    font-family: 'krona', calibri;
+    color: #006D3E;
+    transition: all 0.1s ease-in-out;
+}
+
+a:hover{
+    color: #000000;
+}

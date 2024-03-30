@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Signature Compart'où</title>
+    <style>
+        @font-face {
+            font-family: 'Compagnons';
+            src: url("http://compart.ou.st.medard.free.fr/contact/R/compagnons-webfont.ttf");
+        }
+        @font-face {
+            font-family: 'Raleway';
+            src: url("http://compart.ou.st.medard.free.fr/contact/R/raleway-webfont.ttf");
+        }
+        body{
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            gap: 20px;
+            max-height: 200px;
+        }
+        img#logo{
+            max-height: 150px;
+        }
+        h1{
+            font-family: 'Compagnons', 'Raleway', Calibri;
+            margin: 0;
+            font-size: 1.5em;
+            line-height: 1.1em;
+            color: #007254;
+        }
+        h1 span#sgdf{
+            font-size: 0.7em;
+        }
+        h1 span#sgdf span#point{
+            font-size: 0.7em;
+        }
+        h2{
+            margin: 10px 0px;
+            font-family: 'Raleway', Calibri;
+            font-size: 1em;
+            line-height: 1em;
+        }
+        ul{
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: left;
+            gap: 5%;
+        }
+        ul li a img{
+            width: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <img id="logo" src="http://compart.ou.st.medard.free.fr/contact/R/vert_foulard.png" alt="Logo">
+    <div id="text">
+        <h1>compart'où <br><span id="sgdf">sgdf <span id="point">•</span> saint médard</span></h1>
+        <h2>Alexandre • Baptiste • Sam • Thomas</h2>
+        <ul>
+            <li><a href="mailto:compart.ou.st.medard@gmail.com" target="_blank"><img src="http://compart.ou.st.medard.free.fr/contact/R/mail-vert.png" alt="mail"></a></li>
+            <li><a href="http://compart.ou.st.medard.free.fr/"><img src="http://compart.ou.st.medard.free.fr/contact/R/web-vert.png" alt="site web"></a></li>
+            <li><a href="sms:0767052099" target="_blank"><img src="http://compart.ou.st.medard.free.fr/contact/R/tel-vert.png" alt="téléphone"></a></li>
+            <li><a href="https://www.instagram.com/compart.ou/"><img src="http://compart.ou.st.medard.free.fr/contact/R/insta-vert.png" alt="instagram"></a></li>
+            <li><a href="https://www.facebook.com/profile.php?id=100084458882525"><img src="http://compart.ou.st.medard.free.fr/contact/R/fb-vert.png" alt="facebook"></a></li>
+        </ul>
+    </div>
+</body>
+</html>
