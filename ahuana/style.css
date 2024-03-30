@@ -11,18 +11,18 @@ body{
     margin: 10vh 15vw;
 }
 
-h1, h2, h3, p, figcaption{
+h1, h2, h3, p, figcaption, summary{
     font-family: "Raleway", "Calibri";
     font-weight: 400;
     text-align: justify;
     
 }
 
-h1, h2, h3, p{
+h1, h2, h3, p, summary{
     margin: 15px 0 ;
 }
 
-h1, h2, h3{
+h1, h2, h3, summary{
     color: var(--vert);
 }
 
@@ -36,11 +36,11 @@ h1 + p{
     font-size: 1.1em;
 }
 
-h1 + p a{
+a{
     color: black;
 }
 
-h1 + p a:hover{
+a:hover{
     text-decoration: none;
 }
 
@@ -49,9 +49,28 @@ h2{
     font-size: 1.7em;
 }
 
+summary{
+    font-weight: 600;
+    font-size: 1.6em;
+}
+
+summary{
+    border: solid 1px var(--vert);
+    border-radius: 15px;
+    padding: 10px 20px;
+}
+
 h3{
     font-weight: 500;
     font-size: 1.3em;
+}
+
+details{
+    margin: 50px 10%;
+}
+
+details p{
+    font-size: 0.9 em;
 }
 
 div.image{
@@ -73,4 +92,21 @@ figure img{
 
 div.image#equipe{
     flex-direction: row-reverse;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10%;
+}
+
+main article{
+    width: 45%;
+    width: fit-content;
+}
+
+main article iframe{
+    min-width: 400px;
+    width: 100%;
+    height: 1000px;
 }
