@@ -58,10 +58,6 @@ h3{
     font-size: 1.3em;
 }
 
-details{
-    margin: 50px 10%;
-}
-
 div.image{
     display: flex;
     flex-flow: row wrap;
@@ -84,31 +80,31 @@ div.image#equipe{
     flex-direction: row-reverse;
 }
 
-main{
+section#dossier-textes{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-main article{
+section article{
     width: 47%;
     width: fit-content;
 }
 
-main article iframe{
+section article iframe{
     min-width: 400px;
     width: 100%;
     overflow-x: clip;
 }
 
-main article#pdf iframe{
+section article#pdf iframe{
     aspect-ratio: 21/29.5;
 }
 
-main article#don iframe{
+section article#don iframe{
     height: 1000px;
 }
 
-main article a{
+section article a{
     margin: 5px 0px;
 }
