@@ -3,6 +3,12 @@
 	src: url('R/Raleway.ttf') format('truetype')
 }
 
+/*@media screen and (max-width: 1590px) {
+    body{
+        margin: 2vh 5vw;
+    }
+}*/
+
 html{
     --vert: #006D3E;
 }
@@ -14,8 +20,6 @@ body{
 h1, h2, h3, p, figcaption, summary, a{
     font-family: "Raleway", "Calibri";
     font-weight: 400;
-    text-align: justify;
-    
 }
 
 h1, h2, h3, p, summary{
@@ -49,17 +53,6 @@ h2{
     font-size: 1.7em;
 }
 
-summary{
-    font-weight: 600;
-    font-size: 1.6em;
-}
-
-summary{
-    border: solid 1px var(--vert);
-    border-radius: 15px;
-    padding: 10px 20px;
-}
-
 h3{
     font-weight: 500;
     font-size: 1.3em;
@@ -69,12 +62,9 @@ details{
     margin: 50px 10%;
 }
 
-details p{
-    font-size: 0.9 em;
-}
-
 div.image{
     display: flex;
+    flex-flow: row wrap;
 }
 
 figure{
