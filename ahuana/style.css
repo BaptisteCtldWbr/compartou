@@ -3,6 +3,11 @@
 	src: url('R/Raleway.ttf') format('truetype')
 }
 
+@font-face {
+    font-family: 'compa';
+    src: url('../contact/R/compagnons-webfont.ttf');
+}
+
 html{
     --vert: #006D3E;
 }
@@ -32,6 +37,18 @@ h1{
 h1 + p{
     font-style: italic;
     font-size: 1.1em;
+}
+
+header a::after{
+    content: none;
+}
+
+header *{
+    text-align: center;
+}
+
+header{
+    margin-bottom: 50px;
 }
 
 a{
@@ -110,7 +127,7 @@ li{
 }
 
 div#defiscalisation{
-    width: 50%;
+    width: 70%;
 }
 
 p.entantque{
@@ -120,6 +137,69 @@ p.entantque{
 p.defisc{
     padding-left: 20px;
 }
+
+a[target="_blank"]::after{
+    content: url(R/external.svg);
+    /*width: 10px;
+    position: relative;
+    left: 5px;*/
+}
+
+div.liens{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a#subvention, a#cagnotte{
+    display: block;
+    margin: 20px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: var(--vert);
+    color: #FFFFFF;
+    width: fit-content;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: 2px 2px 2px #494949;
+    transition: all 0.5s ease;
+}
+
+a#subvention:hover, a#cagnotte:hover{
+    box-shadow: none;
+    position: relative;
+    bottom: -2px;
+    right: -2px;
+}
+
+
+
+a#subvention::after, a#cagnotte::after{
+    content: none;
+}
+
+a#subvention img, a#cagnotte img{
+    height: 15px;
+    margin-right: 10px;
+}
+
+section#merci{
+    display: block;
+    margin-top: 80px;
+}
+
+section#merci p{
+    text-align: center;
+}
+
+
+section#merci p:nth-child(1){
+    font-size: 3em;
+    font-family: 'compa', 'Raleway', calibri;
+    color: var(--vert);
+    text-align: center;
+}
+
 
 @media screen and (max-width: 860px) {
     body{
@@ -135,11 +215,4 @@ p.defisc{
     div#defiscalisation{
         width: 100%;
     }
-}
-
-a[target="_blank"]::after{
-    content: url(R/external.svg);
-    /*width: 10px;
-    position: relative;
-    left: 5px;*/
 }
