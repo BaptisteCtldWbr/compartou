@@ -200,6 +200,10 @@ section#merci p:nth-child(1){
     text-align: center;
 }
 
+section#merci p{
+    margin: 5px;
+}
+
 
 @media screen and (max-width: 860px) {
     body{
